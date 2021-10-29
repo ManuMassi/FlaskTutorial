@@ -9,10 +9,15 @@
     {{ form.hidden_tag() }}
         <h1>Rate the dog :)</h1>
 
+        <img src="../static/sad_dog.jpeg" alt="sad dog :(" width="350px", height="500px">
         <img src="../static/dog.png" alt="a nice dog" width="400px" height="380px">
+
 
         <p>
             {{ form.rate_the_dog }}
+            <br/>
+            <h3>Choose the dog's name :)</h3>
+            {{ form.dog_name }}
         </p>
 
         <br/>

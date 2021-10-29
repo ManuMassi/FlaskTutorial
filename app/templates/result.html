@@ -6,6 +6,11 @@
 </head>
 <body>
 <h3>You rated the dog as {{ result }}</h3>
-
+<h4>The name of the dog is {{ name }}</h4>
+{% if good_boy %}
+    <img src="../static/dog.png" alt="a nice dog" width="400px" height="380px">
+{% else %}
+    <img src="../static/sad_dog.jpeg" alt="sad dog :(" width="350px", height="500px">
+{% endif %}
 </body>
 </html>
